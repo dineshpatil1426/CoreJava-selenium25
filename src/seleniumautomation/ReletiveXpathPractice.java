@@ -39,8 +39,6 @@ public class ReletiveXpathPractice {
 		Thread.sleep(2000);
 	}
 	
-	
-	
 	public  void singleSelectDropdown() throws Exception {
 		
 		WebElement drpCountry = driver.findElement(By.xpath("(//select[@class='dropdown'])[1]"));
@@ -49,6 +47,7 @@ public class ReletiveXpathPractice {
 
 		Select selCountry = new Select(drpCountry);
 		selCountry.selectByVisibleText("Australia");
+		
 		if (selCountry.isMultiple()) {
 			System.out.println("Pass");
 		} else {
@@ -58,6 +57,7 @@ public class ReletiveXpathPractice {
 
 		Select selMovies = new Select(drpMovives);
 		selMovies.selectByValue("Miriam Wagner");
+		
 		if (selMovies.isMultiple()) {
 			System.out.println("Pass");
 		} else {
@@ -66,6 +66,7 @@ public class ReletiveXpathPractice {
 		Thread.sleep(2000);
 
 		Select selFruits = new Select(drpFruits);
+		
 		selFruits.selectByIndex(3);
 		if (selFruits.isMultiple()) {
 			System.out.println("Pass");
@@ -74,7 +75,6 @@ public class ReletiveXpathPractice {
 		}
 		Thread.sleep(2000);
 	}
-	
 	
 	public  void multiSelectDropdown() throws Exception {
 		
@@ -112,6 +112,7 @@ public class ReletiveXpathPractice {
 		List<WebElement> watchTVList = multiSelectWatchTV.getAllSelectedOptions();
 
 		if (watchTVList.isEmpty()) {
+			
 			multiSelectWatchTV.selectByVisibleText("Friday");
 			multiSelectWatchTV.selectByValue("Tuesday");
 			multiSelectWatchTV.selectByIndex(6);
@@ -127,7 +128,6 @@ public class ReletiveXpathPractice {
 		}
 		System.out.println();
 	}
-	
 
 	public  void dropdownWithoutSelectTag() throws Exception {
 		
