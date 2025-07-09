@@ -19,16 +19,26 @@ public class ActionsClass {
 
 		WebElement jobMenu = driver.findElement(By.xpath("//div[text()='Jobs']"));
 		
-		Actions ac= new Actions(driver);
+
+		Actions ac = new Actions(driver);
 		ac.moveToElement(jobMenu).perform();
-		
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[@title='IT jobs']")).click();
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//a[@title='IT jobs']")).click();
-		Thread.sleep(1000);
+		System.out.println("First");
 		
-		ac.sendKeys(Keys.CONTROL+"n").perform();
+		/*
+		WebElement comMenu = driver.findElement(By.xpath("//*[text()='Companies']"));
+		ac.moveToElement(comMenu).perform();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//a[@title='MNC'])[1]")).click();	
 		
+		System.out.println("second");
+		 */
+		
+		ac.keyDown(Keys.COMMAND).sendKeys("T").keyUp(Keys.COMMAND).perform();
+
 		Thread.sleep(2000);
 
 		driver.close();
