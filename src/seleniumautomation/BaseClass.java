@@ -9,7 +9,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	public BaseClass(WebDriver driver) {
-		this.driver=driver;
+		BaseClass.driver=driver;
 	}
 
 	public void lunchApp(String url) throws Exception {

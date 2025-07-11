@@ -15,6 +15,7 @@ public class ActionsClass2 {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		
+		// Used For MAC OS 	
 		Actions ac= new Actions(driver);
 		ac.keyDown(Keys.COMMAND).sendKeys("r").keyUp(Keys.COMMAND).perform();
 		Thread.sleep(2000);
