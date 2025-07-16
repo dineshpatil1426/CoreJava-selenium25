@@ -32,6 +32,9 @@ public class FacebookSignUp {
 		Thread.sleep(2000);
 		driver.findElement(By.id("password_step_input")).sendKeys("test@789");
 		
+		
+
+	
 
 	}
 

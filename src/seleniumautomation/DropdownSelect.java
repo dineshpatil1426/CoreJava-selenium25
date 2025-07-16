@@ -1,5 +1,7 @@
 package seleniumautomation;
 
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,16 +20,15 @@ public class DropdownSelect {
 
 		WebElement category = driver.findElement(By.id("combo1"));
 		WebElement Language = driver.findElement(By.id("combo2"));
-		
-		Select obj1= new Select(category);
+
+		Select obj1 = new Select(category);
 		obj1.selectByVisibleText("Server");
 		Thread.sleep(5000);
-		 Select obj2= new Select(Language); 
-		 obj2.selectByVisibleText("Java");
-		 
-		
+		Select obj2 = new Select(Language);
+		obj2.selectByVisibleText("Java");
+
 		Thread.sleep(2000);
-		
+
 		driver.close();
 
 	}
