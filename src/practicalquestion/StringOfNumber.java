@@ -37,6 +37,7 @@ public class StringOfNumber {
 				System.out.print(arr[i]);
 			}
 		}
+		System.out.println();
 
 		System.out.println("************************");
 
@@ -52,7 +53,7 @@ public class StringOfNumber {
 
 			if (map1.get(c2) == 1) {
 
-				System.out.println(c2);
+				System.out.print(c2+",");
 			}
 		}
 

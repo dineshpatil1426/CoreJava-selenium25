@@ -12,6 +12,7 @@ public class HighestOccuranceCharCount {
 		printHighestCharater(str);
 	}
 
+	
 	public static void printHighestCharater(String str) {
 
 		HashMap<Character, Integer> highestchar = new HashMap<>();

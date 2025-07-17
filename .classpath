@@ -8,5 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/macmini/Documents/Selenium jar/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="/Users/macmini/Documents/Selenium jar/jxl-2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/macmini/Documents/Selenium jar/testng-7.10.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -11,7 +11,7 @@ public class PrimeNumber {
 		int num = sc.nextInt();
 
 		int temp = 0;
-
+		
 		for (int i = 2; i < num; i++) {
 			if (num % i == 0) {
 				temp++; // temp=temp+1;
@@ -22,6 +22,7 @@ public class PrimeNumber {
 		} else {
 			System.out.println("It's Not Prime Number");
 		}
+		
 		sc.close();
 
 	}

@@ -22,6 +22,8 @@ public class SpecailCharOfString {
 				}
 			}
 		System.out.println(str2);
+			
+		
 		}
 
 	}

@@ -29,6 +29,9 @@ public class NonRepeatingChar {
 		}
 		System.out.println();
 		System.out.println("First non Repeating Char is :  " + str2.charAt(0));
+		
+		
+		
 
 	}
 

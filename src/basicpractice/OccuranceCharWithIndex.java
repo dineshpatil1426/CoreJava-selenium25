@@ -23,7 +23,6 @@ public class OccuranceCharWithIndex {
 
 	public static void indexOccuranceChar(String str, char ch) {
 		
-
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == ch) {
 
