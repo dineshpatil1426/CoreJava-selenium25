@@ -1,5 +1,9 @@
 package basicpractice;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Demo1 {
@@ -183,6 +187,8 @@ public class Demo1 {
 		}
        */
 		
+		
+		/*
 		// Write a Java program to print a Fibonacci sequence using recursion
 		
 		Scanner s= new Scanner(System.in);
@@ -195,13 +201,162 @@ public class Demo1 {
 			System.out.print(a+",");
 			int next=a+b;
 			a=b;
-			b=next;
+			b=next;	
+		}
+		*/
+		
+		/*
+		//Java Program to Count Character Occurrences in a String with hashMap
+		
+		String str="automation";
+
+		HashMap<Character, Integer> counMap= new HashMap<Character, Integer>();
+		
+		
+		for(char c:str.toCharArray()) {
 			
+			counMap.put(c,counMap.getOrDefault(c,0)+1);
 		}
 		
+		System.out.println(counMap);
+		*/
+		/*
+	
+		//Java Program to Check if Two Strings Are Anagrams
 		
+		String str1 ="listen", str2 = "silent";
+
+        char[] arr1 = str1.toCharArray(), arr2 = str2.toCharArray();
+
+        Arrays.sort(arr1);
+
+        Arrays.sort(arr2);
+        
+        System.out.println();
+
+        System.out.println("Anagram: " + Arrays.equals(arr1, arr2));
+		*/
+		
+		
+		/*
+		//Java Program to Remove Duplicate Characters from a String
+		
+		 String str = "automation";
+		 String [] arr=str.split(""); 
+		
+		String str1="";
+		
+		for(int i=0;i<arr.length;i++) {
+			if(!str1.contains(arr[i])) {
+				str1=str1+arr[i]; 
+			}
+		}
+			
+		System.out.println(str1);
+		 */
+		
+		/*
+		//Java Program to Find Duplicate Elements in an Array
+		
+		int[] arr = {1, 2, 3, 4, 2, 5, 1};
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[i]==arr[j]) {
+					System.out.print(arr[i]+" ");
+				}
+				
+			}
+		}
+		*/
+		
+		/*
+		//Java Program to Find Duplicate Elements in an Array With HashSet
+		
+		int[] arr = {1, 2, 3, 4, 2, 5, 1};
+		
+		HashSet<Integer> set= new HashSet<Integer>();
+		
+		for(int data:arr) {
+			if(!set.add(data)) {
+				System.out.print(data+" ");
+			}
+		}
+		*/
+		
+		
+		String s1 = "Java";
+        String s2 = "Java";
+        String s3 = new String("Java");
+        String s4 = s3.intern();
+
+        System.out.println(s1 == s2); // Line 1
+        System.out.println(s1 == s3); // Line 2
+        System.out.println(s1 == s4);
+	    System.out.println(s1.equals(s3));
+		
+		/*
+		String str="aaabbbcccdddaa";
+		HashMap<Character,Integer> map= new HashMap<Character, Integer>();
+		
+		for(char ch:str.toCharArray()) {
+			if(!Character.isWhitespace(ch));
+			map.put(ch, map.getOrDefault(ch, 0)+1);
+		}
+		
+		for(Map.Entry<Character, Integer> entry :map.entrySet()) {
+			System.out.print(entry.getKey()+"->"+entry.getValue()+" ");
+		}
+		
+		*/
+		
+		/*
+		 
+		// Write a Java program to print the sum of elements in a string array. 
+		// For example: String[] arr = {"1","2","3"}
+		
+		String[] arr = {"1","2","3"};
+		int[] arr1 = new int[arr.length];  
+		
+		int sum=0;
+		
+		for(int i=0;i<arr.length;i++) {
+			  arr1[i]=Integer.parseInt(arr[i]);
+			  sum=sum+arr1[i];
+		}
+		System.out.println(sum);
+		
+		*/
+		
+		/*
+		//Write a Java program to print the sum of digits from a given string (e.g., "abcd23").
+		
+		String s = "abcd23efg1"; 
+		int sum = 0; 
+		for (int i = 0; i < s.length(); i++) {
+			if(Character.isDigit(s.charAt(i))) {
+				sum += Character.getNumericValue(s.charAt(i)); 
+				} 
+			}
+		System.out.println("Sum of digits: " + sum);
+		*/
+		
+		
+		//Given a string, how do you identify and handle duplicate characters or substrings?
+		
+		/*
+		String [] fruit= {"apple", "banana", "apple"};
+		
+		HashSet<String> set1=new HashSet<String>();
+		
+		for(String list:fruit) {
+			if(set1.add(list)) {
+				System.out.print(list+" ");
+			}
+		}
+		*/
 		
 		
 	}
-
+	
 }
+	

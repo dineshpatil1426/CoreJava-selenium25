@@ -14,10 +14,14 @@ public class FibonacciSeriesNumber {
         int a = 0, b = 1;
 
         System.out.print("Fibonacci Series: ");
+        
+        System.out.print(a + " ");
+        System.out.print(b + " ");
 
         for (int i = 1; i <= n; i++) {
-            System.out.print(a + " ");
+            
             int next = a + b;
+            System.out.print(next + " ");
             a = b;
             b = next;
            

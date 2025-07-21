@@ -11,13 +11,13 @@ public class FibonacciSeriesSum {
 		System.out.println("Enter the Number: ");
 		Scanner s = new Scanner(System.in);
 		int num = s.nextInt();
-		int n1 = 1;
+		int n1 = 0;
 		int n2 = 1;
 		int i = 1;
 		int temp = n1 + n2;
 		System.out.print("Sum of Fibonacci Series Number: " + n1 + " + " + n2 + " ");
 
-		while (i < num) {
+		while (i <= num) {
 
 			int n3 = n1 + n2;
 			n1 = n2;
@@ -25,7 +25,7 @@ public class FibonacciSeriesSum {
 
 			temp = temp + n3;
 
-			System.out.print("+ " + n3);
+			System.out.print(" + " + n3);
 			i++;
 		}
 
