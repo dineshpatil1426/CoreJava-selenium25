@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_framework.AnnotationBasic">
+      <class name="testng_framework.FacebookWithTestNG">
         <methods>
-          <include name="testCase2"/>
+          <include name="closeApp"/>
+          <include name="lunchApp"/>
+          <include name="testc3"/>
         </methods>
-      </class> <!-- testng_framework.AnnotationBasic -->
+      </class> <!-- testng_framework.FacebookWithTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
