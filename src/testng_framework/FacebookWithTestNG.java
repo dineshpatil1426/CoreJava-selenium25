@@ -24,6 +24,8 @@ public class FacebookWithTestNG {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		System.out.println("Lunch App");
+		System.out.println("New App lunch");
+		
 	}
 	  
 	
