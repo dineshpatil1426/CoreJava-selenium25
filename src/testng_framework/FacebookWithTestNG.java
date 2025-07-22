@@ -25,6 +25,8 @@ public class FacebookWithTestNG {
 		driver.manage().window().maximize();
 		System.out.println("Lunch App");
 	}
+	  
+	
 	
 	@Test
 	public void testc1() {
