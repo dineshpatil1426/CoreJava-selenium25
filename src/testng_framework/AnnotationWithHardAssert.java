@@ -5,14 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class FacebookWithTestNG {
-	
+public class AnnotationWithHardAssert {
+
 	WebDriver driver;
 	
 	@BeforeMethod
@@ -25,7 +24,7 @@ public class FacebookWithTestNG {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		System.out.println("Lunch App");
-		System.out.println("New App lunch");
+		
 		
 	}
 	  
@@ -37,13 +36,13 @@ public class FacebookWithTestNG {
 		boolean email=driver.findElement(By.id("email")).isDisplayed();
 		boolean pass=driver.findElement(By.id("pass")).isDisplayed();
 		
+		Assert.assertEquals(email, true);
+		Assert.assertEquals(pass, true);
+		
+		System.out.println(email);
+		System.out.println(pass);
 		
 		
-		if(email && pass) {
-			System.out.println("Pass");
-		}else {
-			System.out.println("Fail");
-		}
 		
 	}
 	@Test
@@ -52,11 +51,12 @@ public class FacebookWithTestNG {
 		boolean email=driver.findElement(By.id("email")).isEnabled();
 		boolean pass=driver.findElement(By.id("pass")).isEnabled();
 		
-		if(email && pass) {
-			System.out.println("Pass");
-		}else {
-			System.out.println("Fail");
-		}
+		Assert.assertEquals(email, true);
+		Assert.assertEquals(pass, true);
+		
+		System.out.println(email);
+		System.out.println(pass);
+		
 	}
 
 	@Test
@@ -72,6 +72,5 @@ public class FacebookWithTestNG {
 		System.out.println("Close App");
 		driver.close();
 	}
-	
 
 }
