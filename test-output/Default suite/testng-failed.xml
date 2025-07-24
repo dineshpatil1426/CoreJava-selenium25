@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_framework.AnnotationWithSoftAssert">
+      <class name="testng_framework.FacebookWithDataProviderExcel">
         <methods>
+          <include name="loginTestcase" invocation-numbers="0"/>
           <include name="lunchApp"/>
           <include name="closeApp"/>
-          <include name="testc2"/>
         </methods>
-      </class> <!-- testng_framework.AnnotationWithSoftAssert -->
+      </class> <!-- testng_framework.FacebookWithDataProviderExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
