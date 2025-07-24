@@ -35,6 +35,10 @@ public class FacebookWithDataProviderExcel {
 	public Object[][] loginExceldat() throws Exception {
 
 		Object[][] obj = getExcelData("/Users/macmini/Downloads/Login_page.xls", "Login");
+		
+		// With Excel Header Name 
+		//Object[][] obj = getExcelDataWithHeader("/Users/macmini/Downloads/Login_page1.xls", "Sheet1");
+		
 		return obj;
 	}
 
@@ -81,5 +85,39 @@ public class FacebookWithDataProviderExcel {
 		return data;
 
 	}
+	
+	
+	// In Excel header name display Logic
+	public String[][] getExcelDataWithHeader(String fileName, String sheetName) throws Exception {
+
+		String[][] data = null;
+
+		try {
+
+			FileInputStream fil = new FileInputStream(fileName);
+			Workbook wk = Workbook.getWorkbook(fil);
+			Sheet s = wk.getSheet(sheetName);
+
+			int columns = s.getColumns();
+			int row = s.getRows();
+
+			data = new String[row-1][columns];
+
+			for (int i = 1; i < row; i++) {
+				for (int j = 0; j < columns; j++) {
+
+					data[i-1][j] = s.getCell(j, i).getContents();
+
+				}
+			}
+
+		} catch (Exception e) {
+
+			System.out.println("The exception is: " + e.getMessage());
+		}
+		return data;
+
+	}
+	
 
 }

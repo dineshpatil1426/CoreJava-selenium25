@@ -5,7 +5,7 @@
     <classes>
       <class name="testng_framework.FacebookWithDataProviderExcel">
         <methods>
-          <include name="loginTestcase" invocation-numbers="0"/>
+          <include name="loginTestcase"/>
           <include name="lunchApp"/>
           <include name="closeApp"/>
         </methods>
