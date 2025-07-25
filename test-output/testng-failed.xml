@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [regressionSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="regressionTest(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_framework.FacebookWithTestNG">
+      <class name="testng_framework.TestngAnnotations">
         <methods>
-          <include name="closeApp"/>
-          <include name="lunchApp"/>
-          <include name="testc1"/>
-          <include name="testc2"/>
-          <include name="testc3"/>
+          <include name="loginToApp"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="disconnectDB"/>
+          <include name="urlTest"/>
+          <include name="connectWithDB"/>
+          <include name="deleteUser"/>
+          <include name="createUser"/>
+          <include name="launchBrowser"/>
+          <include name="titleTest"/>
         </methods>
-      </class> <!-- testng_framework.FacebookWithTestNG -->
-      <class name="testng_framework.AnnotationWithSoftAssert">
-        <methods>
-          <include name="lunchApp"/>
-          <include name="closeApp"/>
-          <include name="testc3"/>
-          <include name="testc2"/>
-        </methods>
-      </class> <!-- testng_framework.AnnotationWithSoftAssert -->
+      </class> <!-- testng_framework.TestngAnnotations -->
     </classes>
-  </test> <!-- regressionTest(failed) -->
-</suite> <!-- Failed suite [regressionSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
