@@ -1,0 +1,10 @@
+<suite name="Smoke Suite">
+<test name="smoke test">
+	<classes>
+	<class name="testng_framework.AnnotationWithHardAssert"/>
+	<class name="testng_framework.AnnotationWithSoftAssert"/>	
+	<class name="testng_framework.FacebookWithTestNG"/>
+	</classes>
+</test>	
+	
+</suite>

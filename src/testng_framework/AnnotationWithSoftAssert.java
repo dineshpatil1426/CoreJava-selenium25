@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -36,10 +35,12 @@ public class AnnotationWithSoftAssert {
 
 		SoftAssert sa= new SoftAssert();
 		sa.assertEquals(email, true);
-		sa.assertEquals(pass, false);
+		sa.assertEquals(pass, true);
 		
 		System.out.println(email);
 		System.out.println(pass);
+		
+		sa.assertAll();
 
 	}
 
@@ -51,7 +52,7 @@ public class AnnotationWithSoftAssert {
 
 		SoftAssert sa= new SoftAssert();
 		sa.assertEquals(email, true);
-		sa.assertEquals(pass, false);
+		sa.assertEquals(pass, true);
 
 		System.out.println(email);
 		System.out.println(pass);
